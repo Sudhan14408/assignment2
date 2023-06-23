@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+	<center>
+		<h1>array to list in HTML using js</h1>
+	</center>
+	<ul id="myList"></ul>
+	<script>
+		let data = ["Saab", "Volvo", "BMW", "tata","jaguar","land rover"];
+		let list = document.getElementById("myList");
+		for (i = 0; i < data.length; ++i) {
+			var li = document.createElement('li');
+			li.innerText = data[i];
+			list.appendChild(li);
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Trigger alert using js</h1>
+<form name="form1">
+    <label for="name" style="align-items: center;">Name:</label>
+    <input type="text" id="name" value="" ><br>
+    <button type="button" onclick="myfunction()" style="align-items: center;">Submit</button>
+</form>
+<script>
+    
+    function myfunction()
+    {
+        let NULL=0;
+        let a=document.form1.name.value;
+        if(a ==''|| a === NULL)
+        {
+            alert("ERROR");
+            return false;
+        }
+        else
+        {
+            alert("SUCESSS");
+            return false;
+        }
+    }
+</script>
+</body>
+</html>
